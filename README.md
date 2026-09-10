@@ -74,17 +74,13 @@ Detections
 
 ## Loss Function
 
-$\mathcal{L}_{total}=\mathcal{L}_{obj}+\mathcal{L}_{cls}+\lambda_{coord}\mathcal{L}_{box}$
+$`\Large \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{obj}} + \mathcal{L}_{\text{cls}} + \lambda_{\text{coord}}\mathcal{L}_{\text{box}}`$
 
-where
-
-$\mathcal{L}_{obj}=\operatorname{FocalLoss}(o,\hat{o};\alpha=0.25,\gamma=2.0)$
-
-$\mathcal{L}_{box}=\operatorname{MSE}\left([t_x,t_y,\sqrt{w},\sqrt{h}],[\hat{t}_x,\hat{t}_y,\sqrt{\hat{w}},\sqrt{\hat{h}}]\right)$
-
-$\mathcal{L}_{cls}=\operatorname{MSE}\left(\mathbf{p},\hat{\mathbf{p}}\right)$
-
-$\lambda_{coord}=3.0$
+where 
+* $\mathcal{L}\_{\text{obj}} = \text{FocalLoss}(o,\hat{o};\alpha=0.25,\gamma=2.0)$
+* $\mathcal{L}\_{\text{box}} = \text{MSE}([t_x,t_y,\sqrt{w},\sqrt{h}],[\hat{t}_x,\hat{t}_y,\sqrt{\hat{w}},\sqrt{\hat{h}}])$
+* $\mathcal{L}\_{\text{cls}} = \text{MSE}(\mathbf{p},\hat{\mathbf{p}})$
+* $\lambda\_{\text{coord}} = 3.0$
 
 
 ## Results
