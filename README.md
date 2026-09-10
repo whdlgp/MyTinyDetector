@@ -2,7 +2,6 @@
 It just my tiny object detection model
 
 ## Setup
-### init
 * Copy 'config_example.yaml' to 'config.yaml'
 * Init project  
       ```
