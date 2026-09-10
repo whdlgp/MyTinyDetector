@@ -1,6 +1,25 @@
 # MyTinyDetector
 It just my tiny object detection model
 
+## Setup
+### init
+* Copy 'config_example.yaml' to 'config.yaml'
+* Init project  
+      ```
+      uv sync
+      ```
+* Train  
+      ```
+      uv run train.py
+      ```
+* Test/Eval  
+      ```
+      uv run test.py
+      ```  
+      ```
+      uv run eval.py
+      ```
+
 ## Model Structure
 ```
 Input Image
