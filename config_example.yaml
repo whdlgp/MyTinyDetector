@@ -1,0 +1,22 @@
+data_root: ./data
+img_size: 448
+batch_size: 16
+accum_steps: 2
+
+num_epochs: 100
+warmup_epochs: 5
+freeze_epochs: 3
+warmup_start_factor: 0.1
+lr: 0.0001
+weight_decay: 0.0005
+log_file: ./train_log.csv
+
+checkpoint_dir: ./checkpoints
+save_every: 10
+resume: null
+
+test_checkpoint: best.pth
+test_out: ./test_outputs
+test_num: 9
+conf_th: 0.4
+nms_th: 0.3
